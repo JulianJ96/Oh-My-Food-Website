@@ -1,1 +1,38 @@
 @import 'config';
+
+
+
+body {
+    height: auto;
+    margin: auto;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer img {
+    filter: brightness(100);
+    width: 7.25rem;
+    padding-top: 1.75rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  
+  .column {
+    position: absolute;
+    padding: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .footer-link {
+    color: white;
+  }
+  
+  .footer-section {
+    background-color: #353535;
+    height: 191px;
+    width: auto;
+  }
+  
