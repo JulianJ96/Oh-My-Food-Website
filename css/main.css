@@ -1,3 +1,5 @@
+/* colors!!!!!*/
+/* font!!!!! */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -38,5 +40,112 @@ a {
   background-color: #353535;
   height: 191px;
   width: auto;
+}
+
+@media screen and (min-width: 300px) {
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  /* HEADER!!!!!!!!!! */
+  .header-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 60px;
+  }
+  .header-logo img {
+    width: 15rem;
+    margin: 0;
+  }
+  /* SEARCH!!!!!!!!!!!! */
+  .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 48px;
+    width: auto;
+    background-color: lightgray;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 3px;
+    -webkit-box-shadow: inset 1px 5px 14px -14px gray;
+            box-shadow: inset 1px 5px 14px -14px gray;
+  }
+  .search__row {
+    margin-left: 38px;
+    padding: 10px;
+  }
+  .search i {
+    padding-right: 20px;
+  }
+  .search .search-box {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60%;
+    border: none;
+    font-weight: 900;
+    background-color: lightgray;
+  }
+  .search .search-box:focus {
+    border: none;
+    outline: none;
+  }
+  /*--PAGE AND SUBTITLE!!!!!!!!!! */
+  .subtitle {
+    text-align: center;
+    background-color: #eaeaea;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Page-Title-and-Subtitle {
+    padding: 1.75rem;
+    line-height: 1.5;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .PSubtitle {
+    width: 95%;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-left: 1.5rem;
+  }
+  .btn-header {
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 13px 20px;
+    margin: 10px 0 40px 0;
+    font-size: 14px;
+    color: white;
+    border: none;
+    -webkit-box-shadow: 5px 5px 5px gray;
+            box-shadow: 5px 5px 5px gray;
+    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  }
+  .btn-header:hover {
+    -webkit-filter: brightness(90%);
+            filter: brightness(90%);
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,88 @@
+@media screen and (min-width: 300px){
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+
+    /* HEADER!!!!!!!!!! */
+
+
+  .header-logo{
+      @include center;
+      height: 60px;
+
+      & img{
+          width: 15rem;
+          margin: 0;
+      }
+  }
+
+  /* SEARCH!!!!!!!!!!!! */
+
+
+    .search{
+        @include center;
+        height: 48px;
+        width: auto;
+        background-color: lightgray;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 3px;
+        box-shadow: inset 1px 5px 14px -14px gray;
+
+        &__row{
+            margin-left: 38px;
+            padding: 10px;
+        }
+
+        i {
+            padding-right: 20px;
+        }
+
+        .search-box{
+            align-items: center;
+            width: 60%;
+            border: none;
+            font-weight: 900;
+            background-color: lightgray;
+        }
+
+        .search-box:focus{
+            border: none;
+            outline: none;
+        }
+    } 
+    
+    /*--PAGE AND SUBTITLE!!!!!!!!!! */
+    .subtitle{
+        text-align: center;
+        background-color: #eaeaea;
+        display: flex;
+        align-items: center;
+    }
+
+    .Page-Title-and-Subtitle{
+        padding: 1.75rem;
+        line-height: 1.5;
+        justify-content: space-between;
+    }
+
+    .PSubtitle{
+        width: 95%;
+        font-weight: 300;
+        padding-top: 20px;
+        padding-left: 1.5rem;
+    }
+
+    .btn-header{
+        @include btn-gradient;
+    }
+
+    .btn-header:hover{
+        filter: brightness(90%);
+    }
+}
