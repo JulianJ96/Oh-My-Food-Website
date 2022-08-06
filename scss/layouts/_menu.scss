@@ -1,0 +1,27 @@
+@media screen and (min-width: 0px){
+    *{
+        box-sizing: border-box;
+    }
+
+    .header__menu{
+        @include center;
+
+
+            .header__return{
+                display: inline-block;
+                position: absolute;
+            }
+
+            i{
+                color: black;
+                margin-right: 20rem;
+            }
+
+            img{
+                width: 14rem;
+                margin-left: 1rem;
+            }
+    }
+
+}
+
