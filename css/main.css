@@ -116,9 +116,12 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .Page-Title-and-Subtitle {
-    padding: 1.75rem;
+    padding: 1.8rem;
     line-height: 1.5;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -128,7 +131,7 @@ a {
     width: 95%;
     font-weight: 300;
     padding-top: 20px;
-    padding-left: 1.5rem;
+    padding-left: 1.6rem;
   }
   .btn-header {
     cursor: pointer;
@@ -146,6 +149,165 @@ a {
   .btn-header:hover {
     -webkit-filter: brightness(90%);
             filter: brightness(90%);
+  }
+  /* INFORMATION ROW!!!!!! */
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .info__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 25px;
+  }
+  .info__title {
+    margin-left: 17px;
+    padding: 35px 0 15px 0;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .info span {
+    display: inline-block;
+  }
+  .info__num {
+    color: white;
+    padding-top: 3px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 100px;
+    background-color: #9356DC;
+    position: relative;
+    right: 1.75rem;
+  }
+  .info__button {
+    background-color: #eaeaea;
+    position: relative;
+    border: none;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: left;
+    width: 321px;
+    height: 72px;
+    -webkit-box-shadow: 2px 2px 2px gray;
+            box-shadow: 2px 2px 2px gray;
+  }
+  .info__button:hover {
+    background-color: #e6d1f2;
+  }
+  .info__button:hover .info__icon {
+    color: #9356DC;
+  }
+  .info__icon {
+    padding: 10 0px;
+    width: 30px;
+  }
+  /* RESTAURANT CARDS!!!!!!!!!! */
+  .restaurants {
+    background-color: #EAEAEA;
+    /*---HEART ICON-----*/
+  }
+  .restaurants__title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+  }
+  .restaurants__card {
+    position: relative;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    height: auto;
+    -webkit-box-shadow: 2px 5px 5px lightgray;
+            box-shadow: 2px 5px 5px lightgray;
+  }
+  .restaurants__card-info {
+    margin-left: 10px;
+    padding: 10px 0 15px 0;
+  }
+  .restaurants h2 {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .restaurants h4 {
+    margin-top: 5px;
+    font-weight: 200;
+    font-size: 14px;
+  }
+  .restaurants__card-img-1, .restaurants__card-img-2, .restaurants__card-img-3, .restaurants__card-img-4 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 8;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurants__card-label {
+    background-color: #99E2D0;
+    margin: 0;
+    width: 75px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+  }
+  .restaurants__card-icon {
+    display: inline-block;
+    position: absolute;
+    font-size: 20px;
+    right: 1.75rem;
+    padding-bottom: 1.5rem;
+    bottom: 4px;
+    /* css for solid heart before the hover */
+    /* css for the outline heart before the hover */
+    /* css for the outline heart after the hover */
+  }
+  .restaurants__card-icon .solid {
+    position: relative;
+    opacity: 0;
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), to(#9536dc));
+    background: linear-gradient(to top, #ff79da, #9536dc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: opacity 3000ms;
+    transition: opacity 3000ms;
+  }
+  .restaurants__card-icon .outline {
+    position: absolute;
+    opacity: 100%;
+    -webkit-transition: opacity 3000ms;
+    transition: opacity 3000ms;
+  }
+  .restaurants__card-icon .restaurants__card-icon:hover .outline {
+    opacity: 0;
+    -webkit-transition: opacity 3000ms;
+    transition: opacity 3000ms;
   }
 }
 /*# sourceMappingURL=main.css.map */
