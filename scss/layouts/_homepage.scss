@@ -48,6 +48,7 @@
             width: 60%;
             border: none;
             font-weight: 900;
+            margin-left: .5rem;
             background-color: lightgray;
         }
 
@@ -156,12 +157,23 @@
     .restaurants{
         background-color: #EAEAEA;
 
+        &__wrap{
+            background-color: #eaeaea;
+            height: 1217px
+        }
+
+        &__container{
+            width: 332px;
+            margin-left: 1.25rem;
+        }
+
         &__title {
             font-size: 20px;
             font-weight: 500;
             margin-top: 30px;
             margin-bottom: 20px;
             padding-top: 30px;
+            margin-left: 17px;
         }
 
         &__card {
@@ -169,7 +181,8 @@
             background-color: white;
             margin-bottom: 20px;
             border-radius: 15px;
-            height: auto;
+            height: 265px;
+            width: auto;
             box-shadow: 2px 5px 5px lightgray;
         }
 
@@ -196,10 +209,13 @@
             align-items: center;
             z-index: 8;
             width: 100%;
+            height: 200px;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
             object-fit: cover;
         }
+
+        
 
         &__card-label{
             background-color: $teritary-color;
@@ -215,17 +231,15 @@
 
         /*---HEART ICON-----*/ 
         
-
         &__card-icon{
             display: inline-block;
             position: absolute;
             font-size: 20px;
-            right: 1.75rem;
+            margin-left: 18rem;
             padding-bottom: 1.5rem;
-            bottom: 4px;
-        
-
-            /* css for solid heart before the hover */
+            bottom: 20px;
+        }
+        /* css for solid heart before the hover */
             .solid{
                 position: relative;
                 opacity: 0;
@@ -236,18 +250,17 @@
                 transition: opacity 3000ms;
             }
 
-            /* css for the outline heart before the hover */ 
+        /* css for the outline heart before the hover */ 
             .outline{
                 position: absolute;
                 opacity: 100%;
                 transition: opacity 3000ms;
             }
 
-            /* css for the outline heart after the hover */ 
+        /* css for the outline heart after the hover */ 
             .restaurants__card-icon:hover .outline{
                 opacity: 0;
                 transition: opacity 3000ms;
             }
-        }
     }
 }
