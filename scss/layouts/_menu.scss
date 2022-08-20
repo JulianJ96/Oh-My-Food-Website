@@ -26,6 +26,7 @@
     .menu__containers{
         position: relative;
         background-color: #eaeaea;
+        width: 420px;
     }
 
 
@@ -35,7 +36,7 @@
     }
 
         .menu__image{
-            width: 375px;
+            width: 420px;
             height: 217px;
             z-index: 10;
             object-fit: cover;
@@ -44,13 +45,16 @@
         .menu__title{
             display: inline-flex;
             font-size: 14px;
+            margin-left: 12px;
         }
+
     /*-- HEART!!!!!! --*/ 
         .menu__title-icon{
             display: inline-block;
             position: absolute;
             font-size: 20px;
-            margin-left: 11.75rem;
+            right: 3.75rem;
+            margin-top: 2px;
             padding-bottom: 1.5rem;
     }
     /* css for solid heart before the hover */ 
@@ -95,6 +99,8 @@
             padding-bottom: 3px;
             border-bottom: solid 3px;
             border-image: linear-gradient(to right, #99e2d0 10%, #eaeaea 10%) 100% 1;
+            padding-top: 1rem;
+            margin-left: 12px;
         }
 
         .menu__card{
@@ -102,16 +108,20 @@
             border-radius: 10px;
             background-color: #fff;
             overflow: hidden;
+            margin-top: 12px;
             margin-bottom: 12px;
+            margin-left: 12px;
+            width: 341px;
             box-shadow: 5px 5px 2px gray;
-            animation: appear ease-in-out 0.8s
+            animation: appear ease-in-out 0.8s;
+            justify-content: space-between;
         }
 
             .menu__prices{
                 display: flex;
                 font-weight: bold;
+                width: auto;
                 align-items: flex-end;
-                width: 25%;
             }
 
             .menu__text{
@@ -134,7 +144,7 @@
 
             .menu__description{
                 display: inline-block;
-                width: 100%;
+                width: auto;
                 margin-left: 5px;
                 padding: 0 5px 8px 5px;
                 font-weight: 300;
@@ -149,6 +159,7 @@
                 align-items: center;
                 justify-content: center;
                 background-color: $teritary-color;
+                visibility: hidden;
             }
 
             .menu__card:hover{
@@ -165,7 +176,7 @@
 
             .menu__holder{
                 .menu__icon{
-                    animation: clockwise 1000ms ease-in-out forwads;
+                    animation: clockwise 1000ms ease-in-out forwards;
                 }
             }
 
@@ -218,6 +229,7 @@
     .menu__order-btn{
         @include center;
         background-color: #eaeaea;
+        width: 420px;
     
 
         .btn-gradient{

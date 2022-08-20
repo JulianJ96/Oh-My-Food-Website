@@ -1,5 +1,74 @@
 /* colors!!!!!*/
 /* font!!!!! */
+@-webkit-keyframes clockwise {
+  0% {
+    -webkit-transform: rotate(0 turn);
+            transform: rotate(0 turn);
+  }
+  100% {
+    -webkit-transform: rotate(2 turn);
+            transform: rotate(2 turn);
+  }
+}
+@keyframes clockwise {
+  0% {
+    -webkit-transform: rotate(0 turn);
+            transform: rotate(0 turn);
+  }
+  100% {
+    -webkit-transform: rotate(2 turn);
+            transform: rotate(2 turn);
+  }
+}
+
+@-webkit-keyframes counter-clock {
+  0% {
+    -webkit-transform: rotate(0 turn);
+            transform: rotate(0 turn);
+  }
+  100% {
+    -webkit-transform: rotate(-2 turn);
+            transform: rotate(-2 turn);
+  }
+}
+
+@keyframes counter-clock {
+  0% {
+    -webkit-transform: rotate(0 turn);
+            transform: rotate(0 turn);
+  }
+  100% {
+    -webkit-transform: rotate(-2 turn);
+            transform: rotate(-2 turn);
+  }
+}
+
+@-webkit-keyframes appear {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -39,7 +108,7 @@ a {
 .footer-section {
   background-color: #353535;
   height: 196px;
-  width: auto;
+  width: 420px;
 }
 
 @media screen and (min-width: 300px) {
@@ -354,6 +423,7 @@ a {
   .menu__containers {
     position: relative;
     background-color: #eaeaea;
+    width: 420px;
   }
   .menu__main {
     display: -webkit-box;
@@ -365,7 +435,7 @@ a {
             flex-direction: column;
   }
   .menu__image {
-    width: 375px;
+    width: 420px;
     height: 217px;
     z-index: 10;
     -o-object-fit: cover;
@@ -376,13 +446,15 @@ a {
     display: -ms-inline-flexbox;
     display: inline-flex;
     font-size: 14px;
+    margin-left: 12px;
   }
   /*-- HEART!!!!!! --*/
   .menu__title-icon {
     display: inline-block;
     position: absolute;
     font-size: 20px;
-    margin-left: 11.75rem;
+    right: 3.75rem;
+    margin-top: 2px;
     padding-bottom: 1.5rem;
   }
   /* css for solid heart before the hover */
@@ -429,6 +501,8 @@ a {
     -o-border-image: linear-gradient(to right, #99e2d0 10%, #eaeaea 10%) 100% 1;
        border-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #99e2d0), color-stop(10%, #eaeaea)) 100% 1;
        border-image: linear-gradient(to right, #99e2d0 10%, #eaeaea 10%) 100% 1;
+    padding-top: 1rem;
+    margin-left: 12px;
   }
   .menu__card {
     display: -webkit-box;
@@ -437,21 +511,27 @@ a {
     border-radius: 10px;
     background-color: #fff;
     overflow: hidden;
+    margin-top: 12px;
     margin-bottom: 12px;
+    margin-left: 12px;
+    width: 341px;
     -webkit-box-shadow: 5px 5px 2px gray;
             box-shadow: 5px 5px 2px gray;
     -webkit-animation: appear ease-in-out 0.8s;
             animation: appear ease-in-out 0.8s;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .menu__prices {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-weight: bold;
+    width: auto;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    width: 25%;
   }
   .menu__text {
     display: inline-block;
@@ -474,7 +554,7 @@ a {
   }
   .menu__description {
     display: inline-block;
-    width: 100%;
+    width: auto;
     margin-left: 5px;
     padding: 0 5px 8px 5px;
     font-weight: 300;
@@ -494,6 +574,7 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     background-color: #99E2D0;
+    visibility: hidden;
   }
   .menu__card:hover .menu__text {
     -webkit-transition: width 1.5s;
@@ -504,8 +585,8 @@ a {
             animation: counter-clock 1000ms ease-in-out forwards;
   }
   .menu__holder .menu__icon {
-    -webkit-animation: clockwise 1000ms ease-in-out forwads;
-            animation: clockwise 1000ms ease-in-out forwads;
+    -webkit-animation: clockwise 1000ms ease-in-out forwards;
+            animation: clockwise 1000ms ease-in-out forwards;
   }
   .menu__icon {
     color: #fff;
@@ -563,6 +644,7 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     background-color: #eaeaea;
+    width: 420px;
   }
   .menu__order-btn .btn-gradient {
     cursor: pointer;
