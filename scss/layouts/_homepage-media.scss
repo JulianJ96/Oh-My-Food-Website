@@ -1,2 +1,151 @@
+@media screen and (max-width: 767px){
+    .header-logo{
+        height: 55px;
+        width: 100%;
+    }
+
+    /* SEARCH BAR */
+
+    .search{
+        flex-direction: column;
+    }
+
+    /* INFORMATION!! */
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &__wrap{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__num{
+            left: -12px;
+        }
+
+        &__button{
+            width: 80%;
+            margin: 0 0 15px 25px;
+        }
+    }
+
+    /* RESTAURANT CARDS!!!!! */ 
+    
+    .restaurants{
+        &__wrap{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title{
+            margin-left: 35px;
+        }
+
+        &__card{
+            height: 255px;
+            width: auto;
+        }
+
+        &__card-img-1,
+        &__card-img-2,
+        &__card-img-3,
+        &__card-img-4 {
+            height: 180px;
+        }
+    }
+
+    /* FOOTER!!!!!! */ 
+
+    .footer-section{
+        width: auto;
+    }
+
+}
 
 
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+    
+    .header__logo {
+        height: 75px;
+        width: 50%;
+    }
+
+     /* SEARCH BAR */
+
+     .subtitle-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .Psubtitle{
+        margin-left: 35px;
+    }
+    .btn-gradient{
+        margin-right: 150px;
+    }
+
+    /* INFORMATION!! */
+
+    .info{
+        display: flex;
+         flex-direction: column;
+        width: 100%;
+    
+        &__wrap{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__num{
+            left: -12px;
+        }
+    
+        &__button{
+            width: 90%;
+            margin: 0 15px 20px 18px;
+        }
+    }
+
+    /*-- RESTAURANT CARD--*/
+
+    .restaurants {
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title {
+            margin-left: 30px;
+        }
+
+
+        &__card {
+            margin-left: 9%;
+            width: 260%;
+            height: 22%;
+        }
+        &__card-img-1,
+        &__card-img-2,
+        &__card-img-3,
+        &__card-img-4 {
+            height: 200px;
+        }
+   /*-- HEART--*/
+
+    &__card-icon {
+        top: 85%;
+        right: 8%;       
+        }
+    }
+
+
+    /* FOOTER SECTION!!!!!!! */ 
+    .footer-section{
+        width: 100%;
+    }
+}
