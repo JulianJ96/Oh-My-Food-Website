@@ -1,0 +1,209 @@
+@media screen and (max-width: 767px){
+   .header__return{
+       top: 2%;
+       left: 10%;
+   }
+
+   .menu__image{
+       width: 100%;
+       height: 200px;
+   }
+
+   .menu__title{
+       margin: 15px 0 0 18px;
+   }
+
+   .menu__containers{
+       width: 100%;
+   }
+
+   /* HEART!!!!!! */ 
+
+   .menu__title-icon{
+       top: 1%;
+       left: 89%;
+   }
+
+   /* CARDS!!!!!!!!!! */ 
+
+   .menu__choices-title{
+       margin: 30px 0 20px 18px;
+   }
+
+   .menu__card{
+       width: 90%;
+       margin-left: 18px;
+   }
+
+   .menu__prices{
+       padding: 0 8px 8px 48px;
+   }
+
+   .menu__text{
+       width: 75%;
+   }
+
+   .menu__card:hover{
+       .menu__text{
+           width: 100%;
+       }
+   }
+
+   .menu__description{
+       font-size: 14px;
+   }
+
+   .menu__holder{
+       width: 48%;
+   }
+
+   .menu__order-btn{
+       width: 100%;
+   }
+}
+
+
+@media screen and (max-width: 992px) and (min-width: 767px){
+    .header__return{
+        top: 4%;
+        left: 5%;
+    }
+
+    .header__logo{
+        margin-left: 9.5rem;
+        margin-top: 1rem;
+    }
+
+    .menu__image{
+        height: 200px;
+        width: 100%;
+    }
+
+    .menu__title{
+        margin: 15px 0 0 40px;
+    }
+
+    /* HEART!!! */ 
+    .menu__title-icon{
+        top: 1.75%;
+        left: 92.5%;
+    }
+
+    /* CARDS */ 
+
+    .menu__choices-title{
+        margin: 30px 0 20px 40px;
+    }
+
+    .menu__card{
+        width: 90%;
+        margin-left: 40px;
+    }
+
+    .menu__text{
+        width: 88%;
+    }
+
+    .menu__prices{
+        padding: 0 8px 8px 50px;
+    }
+
+    .menu__description{
+        font-size: 14px;
+    }
+
+    .menu__card:hover{
+        .menu__text{
+            width: 70%;
+        }
+    }
+
+    .menu__containers{
+        width: 100%;
+    }
+
+    .menu__order-btn{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 993px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .header__return{
+        top: 2%;
+        left: 2%;
+    }
+
+    .menu__image{
+        height: 200px;
+        width: 100%;
+    }
+
+    .menu__title{
+        margin: 15px 0 0 20px;
+    }
+
+
+    /* HEART!!!!! */ 
+
+    .menu__title-icon{
+        top: 1%;
+        left: 97.2%;
+    }
+    
+    /* CARDS!!!!!!! */ 
+
+    .menu__choices{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .menu__entrees,
+    .menu__main-dish,
+    .menu__dessert{
+        width: 100%;
+    }
+
+    .menu__choices-title{
+        width: 85%;
+        margin: 30px 0 20px 20px;
+    }
+
+    .menu__card{
+        width: 90%;
+        margin-right: 35px;
+    }
+
+    .menu__text{
+        width: 82%;
+    }
+
+    .menu__prices{
+        padding: 5px 8px 8px 25px;
+    }
+
+    .menu__card:hover{
+        .menu__text{
+            width: 55%;
+        }
+    }
+
+    .menu__description{
+        font-size: 14px;
+    }
+
+    .menu__order-btn{
+        width: 100%;
+    }
+
+    .menu__containers{
+        width: auto;
+    }
+
+   
+}

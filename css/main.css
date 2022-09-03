@@ -2,44 +2,44 @@
 /* font!!!!! */
 @-webkit-keyframes clockwise {
   0% {
-    -webkit-transform: rotate(0 turn);
-            transform: rotate(0 turn);
-  }
-  100% {
     -webkit-transform: rotate(2 turn);
             transform: rotate(2 turn);
+  }
+  100% {
+    -webkit-transform: rotate(4 turn);
+            transform: rotate(4 turn);
   }
 }
 @keyframes clockwise {
   0% {
-    -webkit-transform: rotate(0 turn);
-            transform: rotate(0 turn);
-  }
-  100% {
     -webkit-transform: rotate(2 turn);
             transform: rotate(2 turn);
+  }
+  100% {
+    -webkit-transform: rotate(4 turn);
+            transform: rotate(4 turn);
   }
 }
 
 @-webkit-keyframes counter-clock {
   0% {
-    -webkit-transform: rotate(0 turn);
-            transform: rotate(0 turn);
+    -webkit-transform: rotate(2 turn);
+            transform: rotate(2 turn);
   }
   100% {
-    -webkit-transform: rotate(-2 turn);
-            transform: rotate(-2 turn);
+    -webkit-transform: rotate(-4 turn);
+            transform: rotate(-4 turn);
   }
 }
 
 @keyframes counter-clock {
   0% {
-    -webkit-transform: rotate(0 turn);
-            transform: rotate(0 turn);
+    -webkit-transform: rotate(2 turn);
+            transform: rotate(2 turn);
   }
   100% {
-    -webkit-transform: rotate(-2 turn);
-            transform: rotate(-2 turn);
+    -webkit-transform: rotate(-4 turn);
+            transform: rotate(-4 turn);
   }
 }
 
@@ -347,7 +347,7 @@ a {
   }
   .restaurants__container {
     width: 332px;
-    margin-left: 1.25rem;
+    margin-left: 4rem;
   }
   .restaurants__title {
     font-size: 20px;
@@ -478,7 +478,7 @@ a {
             flex-direction: column;
   }
   .info__num {
-    left: -12px;
+    left: -30px;
   }
   .info__button {
     width: 80%;
@@ -554,7 +554,7 @@ a {
             flex-direction: column;
   }
   .info__num {
-    left: -12px;
+    left: -28px;
   }
   .info__button {
     width: 90%;
@@ -577,8 +577,8 @@ a {
     margin-left: 30px;
   }
   .restaurants__card {
-    margin-left: 9%;
-    width: 260%;
+    margin-left: .25rem;
+    width: 245%;
     height: 22%;
   }
   .restaurants__card-img-1, .restaurants__card-img-2, .restaurants__card-img-3, .restaurants__card-img-4 {
@@ -591,6 +591,88 @@ a {
   /* FOOTER SECTION!!!!!!! */
   .footer-section {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .header-logo {
+    height: 100px;
+    width: 100%;
+  }
+  /* SEARCH BAR */
+  .subtitle-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Psubtitle {
+    margin-left: 35px;
+  }
+  .btn-gradient {
+    margin-right: 150px;
+  }
+  /* INFORMATION!!!! */
+  .info__wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 15px;
+  }
+  .info__title {
+    margin-left: 29px;
+  }
+  .info__num {
+    left: -30px;
+  }
+  .info__button {
+    width: 30%;
+    border-radius: 25px;
+    margin-right: 12px;
+  }
+  .info__icon {
+    font-size: 18px;
+  }
+  /* RESTAURANT CARDS!!!!! */
+  .restaurants {
+    /* HEART!!!!!!! */
+  }
+  .restaurants__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    margin-left: 29px;
+  }
+  .restaurants__wrap {
+    height: auto;
+  }
+  .restaurants__title {
+    margin-left: 29px;
+  }
+  .restaurants__card {
+    margin-left: 29px;
+    margin-bottom: 20px;
+    width: 45%;
+  }
+  .restaurants__card-img-1, .restaurants__card-img-2, .restaurants__card-img-3, .restaurants__card-img-4 {
+    height: 195px;
+  }
+  .restaurants__card-icon {
+    top: 83%;
+    right: 9.5%;
+  }
+  /* FOOTER!!!!!! */
+  .footer-section {
+    width: auto;
   }
 }
 
@@ -728,8 +810,8 @@ a {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    width: 25%;
-    padding: 0 8px 8px 50px;
+    width: 24.5%;
+    padding: 0 8px 8px 8px;
   }
   .menu__text {
     display: inline-block;
@@ -754,15 +836,15 @@ a {
   }
   .menu__description {
     display: inline-block;
-    width: 100%;
+    width: auto;
     margin-left: 5px;
-    padding: 0px 5px 8px 5px;
+    padding: 0px 5px 8px 4px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
   .menu__holder {
-    width: 25%;
+    width: 24.5%;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -779,12 +861,12 @@ a {
     transition: width 1.5s;
   }
   .menu__card:hover .menu__icon {
-    -webkit-animation: counter-clock 1000ms ease-in-out forwards;
-            animation: counter-clock 1000ms ease-in-out forwards;
-  }
-  .menu__holder:hover .menu__icon {
     -webkit-animation: clockwise 1000ms ease-in-out forwards;
             animation: clockwise 1000ms ease-in-out forwards;
+  }
+  .menu__holder:hover .menu__icon {
+    -webkit-animation: counter-clock 1000ms ease-in-out forwards;
+            animation: counter-clock 1000ms ease-in-out forwards;
   }
   .menu__icon {
     color: #fff;
@@ -861,6 +943,169 @@ a {
   .menu__order-btn .btn-gradient:hover {
     -webkit-filter: brightness(95%);
             filter: brightness(95%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__return {
+    top: 2%;
+    left: 10%;
+  }
+  .menu__image {
+    width: 100%;
+    height: 200px;
+  }
+  .menu__title {
+    margin: 15px 0 0 18px;
+  }
+  .menu__containers {
+    width: 100%;
+  }
+  /* HEART!!!!!! */
+  .menu__title-icon {
+    top: 1%;
+    left: 89%;
+  }
+  /* CARDS!!!!!!!!!! */
+  .menu__choices-title {
+    margin: 30px 0 20px 18px;
+  }
+  .menu__card {
+    width: 90%;
+    margin-left: 18px;
+  }
+  .menu__prices {
+    padding: 0 8px 8px 48px;
+  }
+  .menu__text {
+    width: 75%;
+  }
+  .menu__card:hover .menu__text {
+    width: 100%;
+  }
+  .menu__description {
+    font-size: 14px;
+  }
+  .menu__holder {
+    width: 48%;
+  }
+  .menu__order-btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  .header__return {
+    top: 4%;
+    left: 5%;
+  }
+  .header__logo {
+    margin-left: 9.5rem;
+    margin-top: 1rem;
+  }
+  .menu__image {
+    height: 200px;
+    width: 100%;
+  }
+  .menu__title {
+    margin: 15px 0 0 40px;
+  }
+  /* HEART!!! */
+  .menu__title-icon {
+    top: 1.75%;
+    left: 92.5%;
+  }
+  /* CARDS */
+  .menu__choices-title {
+    margin: 30px 0 20px 40px;
+  }
+  .menu__card {
+    width: 90%;
+    margin-left: 40px;
+  }
+  .menu__text {
+    width: 88%;
+  }
+  .menu__prices {
+    padding: 0 8px 8px 50px;
+  }
+  .menu__description {
+    font-size: 14px;
+  }
+  .menu__card:hover .menu__text {
+    width: 70%;
+  }
+  .menu__containers {
+    width: 100%;
+  }
+  .menu__order-btn {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .header__return {
+    top: 2%;
+    left: 2%;
+  }
+  .menu__image {
+    height: 200px;
+    width: 100%;
+  }
+  .menu__title {
+    margin: 15px 0 0 20px;
+  }
+  /* HEART!!!!! */
+  .menu__title-icon {
+    top: 1%;
+    left: 97.2%;
+  }
+  /* CARDS!!!!!!! */
+  .menu__choices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .menu__entrees,
+  .menu__main-dish,
+  .menu__dessert {
+    width: 100%;
+  }
+  .menu__choices-title {
+    width: 85%;
+    margin: 30px 0 20px 20px;
+  }
+  .menu__card {
+    width: 90%;
+    margin-right: 35px;
+  }
+  .menu__text {
+    width: 82%;
+  }
+  .menu__prices {
+    padding: 5px 8px 8px 25px;
+  }
+  .menu__card:hover .menu__text {
+    width: 55%;
+  }
+  .menu__description {
+    font-size: 14px;
+  }
+  .menu__order-btn {
+    width: 100%;
+  }
+  .menu__containers {
+    width: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */

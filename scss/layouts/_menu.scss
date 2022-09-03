@@ -117,8 +117,8 @@
                 display: flex;
                 font-weight: bold;
                 align-items: flex-end;
-                width: 25%;
-                padding: 0 8px 8px 50px;
+                width: 24.5%;
+                padding: 0 8px 8px 8px;
             }
             
             .menu__text{
@@ -141,16 +141,16 @@
 
             .menu__description{
                 display: inline-block;
-                width: 100%;
+                width: auto;
                 margin-left: 5px;
-                padding: 0px 5px 8px 5px;
+                padding: 0px 5px 8px 4px;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
             }
 
             .menu__holder{
-                width: 25%;
+                width: 24.5%;
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
@@ -165,13 +165,13 @@
 
             .menu__card:hover{
                 .menu__icon{
-                    animation: counter-clock 1000ms ease-in-out forwards;
+                    animation: clockwise 1000ms ease-in-out forwards;
                 }
             }
 
             .menu__holder:hover{
                 .menu__icon{
-                    animation: clockwise 1000ms ease-in-out forwards;
+                    animation: counter-clock 1000ms ease-in-out forwards;
                 }
             }
 

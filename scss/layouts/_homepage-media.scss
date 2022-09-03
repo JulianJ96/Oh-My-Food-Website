@@ -23,7 +23,7 @@
         }
 
         &__num{
-            left: -12px;
+            left: -30px;
         }
 
         &__button{
@@ -93,7 +93,7 @@
 
     .info{
         display: flex;
-         flex-direction: column;
+        flex-direction: column;
         width: 100%;
     
         &__wrap{
@@ -102,7 +102,7 @@
         }
     
         &__num{
-            left: -12px;
+            left: -28px;
         }
     
         &__button{
@@ -125,8 +125,8 @@
 
 
         &__card {
-            margin-left: 9%;
-            width: 260%;
+            margin-left: .25rem;
+            width: 245%;
             height: 22%;
         }
         &__card-img-1,
@@ -148,4 +148,99 @@
     .footer-section{
         width: 100%;
     }
+}
+
+@media screen and (min-width: 993px){
+    .header-logo{
+        height: 100px;
+        width: 100%;
+    }
+
+    /* SEARCH BAR */
+
+    .subtitle-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .Psubtitle{
+        margin-left: 35px;
+    }
+    .btn-gradient{
+        margin-right: 150px;
+    }
+
+    /* INFORMATION!!!! */
+
+    .info{
+        &__wrap{
+            flex-direction: row;
+            margin-left: 15px;
+        }
+
+        &__title{
+            margin-left: 29px;
+        }
+
+        &__num{
+            left: -30px;
+        }
+
+        &__button{
+            width: 30%;
+            border-radius: 25px;
+            margin-right: 12px;
+        }
+
+        &__icon{
+            font-size: 18px;
+        }
+    }
+
+    /* RESTAURANT CARDS!!!!! */ 
+
+    .restaurants{
+        &__container{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-left: 29px;
+        }
+
+        &__wrap{
+            height: auto;
+        }
+
+        &__title{
+            margin-left: 29px;
+        }
+
+        &__card{
+            margin-left: 29px;
+            margin-bottom: 20px;
+            width: 45%;
+        }
+
+        &__card-img-1,
+        &__card-img-2,
+        &__card-img-3,
+        &__card-img-4 {
+            height: 195px;
+        }
+    
+
+        /* HEART!!!!!!! */ 
+            &__card-icon{
+            top: 83%;
+            right: 9.5%;
+        }
+    }
+
+    /* FOOTER!!!!!! */ 
+
+    .footer-section{
+        width: auto;
+    }
+
 }
