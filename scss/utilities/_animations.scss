@@ -1,21 +1,21 @@
 @keyframes clockwise{
     0%{
-        transform: rotate(2.0 turn);
+        transform: rotate(0.0turn);
     }
 
     100%{
-        transform: rotate(4.0 turn);
+        transform: rotate(2.0turn);
     }
 }
 
 
 @keyframes counter-clock{
     0%{
-        transform: rotate(2.0 turn);
+        transform: rotate(0.0turn);
     }
 
     100% {
-        transform: rotate(-4.0 turn);
+        transform: rotate(-2.0turn);
     }
 }
 

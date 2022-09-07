@@ -110,7 +110,7 @@
             margin: 12px;
             box-shadow: 5px 5px 2px grey;
             animation: appear ease-in-out .8s;
-            width: 85%;
+            width: 100%;
         }
 
             .menu__prices{
@@ -118,7 +118,7 @@
                 font-weight: bold;
                 align-items: flex-end;
                 width: 24.5%;
-                padding: 0 8px 8px 8px;
+                padding: 0 8px 8px 48px;
             }
             
             .menu__text{
@@ -129,7 +129,7 @@
 
             .menu__item{
                 display: flex;
-                width: 100%;
+                width: 90%;
                 margin-left: 5px;
                 font-size: 16px;
                 font-weight: 500;
@@ -165,13 +165,13 @@
 
             .menu__card:hover{
                 .menu__icon{
-                    animation: clockwise 1000ms ease-in-out forwards;
+                    animation: counter-clock 1000ms ease-in-out forwards;
                 }
             }
 
             .menu__holder:hover{
                 .menu__icon{
-                    animation: counter-clock 1000ms ease-in-out forwards;
+                    animation: clockwise 1000ms ease-in-out forwards;
                 }
             }
 

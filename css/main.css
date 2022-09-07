@@ -2,44 +2,44 @@
 /* font!!!!! */
 @-webkit-keyframes clockwise {
   0% {
-    -webkit-transform: rotate(2 turn);
-            transform: rotate(2 turn);
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
   }
   100% {
-    -webkit-transform: rotate(4 turn);
-            transform: rotate(4 turn);
+    -webkit-transform: rotate(2turn);
+            transform: rotate(2turn);
   }
 }
 @keyframes clockwise {
   0% {
-    -webkit-transform: rotate(2 turn);
-            transform: rotate(2 turn);
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
   }
   100% {
-    -webkit-transform: rotate(4 turn);
-            transform: rotate(4 turn);
+    -webkit-transform: rotate(2turn);
+            transform: rotate(2turn);
   }
 }
 
 @-webkit-keyframes counter-clock {
   0% {
-    -webkit-transform: rotate(2 turn);
-            transform: rotate(2 turn);
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
   }
   100% {
-    -webkit-transform: rotate(-4 turn);
-            transform: rotate(-4 turn);
+    -webkit-transform: rotate(-2turn);
+            transform: rotate(-2turn);
   }
 }
 
 @keyframes counter-clock {
   0% {
-    -webkit-transform: rotate(2 turn);
-            transform: rotate(2 turn);
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
   }
   100% {
-    -webkit-transform: rotate(-4 turn);
-            transform: rotate(-4 turn);
+    -webkit-transform: rotate(-2turn);
+            transform: rotate(-2turn);
   }
 }
 
@@ -800,7 +800,7 @@ a {
             box-shadow: 5px 5px 2px grey;
     -webkit-animation: appear ease-in-out .8s;
             animation: appear ease-in-out .8s;
-    width: 85%;
+    width: 100%;
   }
   .menu__prices {
     display: -webkit-box;
@@ -811,7 +811,7 @@ a {
         -ms-flex-align: end;
             align-items: flex-end;
     width: 24.5%;
-    padding: 0 8px 8px 8px;
+    padding: 0 8px 8px 48px;
   }
   .menu__text {
     display: inline-block;
@@ -825,7 +825,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    width: 90%;
     margin-left: 5px;
     font-size: 16px;
     font-weight: 500;
@@ -861,12 +861,12 @@ a {
     transition: width 1.5s;
   }
   .menu__card:hover .menu__icon {
-    -webkit-animation: clockwise 1000ms ease-in-out forwards;
-            animation: clockwise 1000ms ease-in-out forwards;
-  }
-  .menu__holder:hover .menu__icon {
     -webkit-animation: counter-clock 1000ms ease-in-out forwards;
             animation: counter-clock 1000ms ease-in-out forwards;
+  }
+  .menu__holder:hover .menu__icon {
+    -webkit-animation: clockwise 1000ms ease-in-out forwards;
+            animation: clockwise 1000ms ease-in-out forwards;
   }
   .menu__icon {
     color: #fff;
@@ -975,7 +975,7 @@ a {
     margin-left: 18px;
   }
   .menu__prices {
-    padding: 0 8px 8px 48px;
+    padding: 0 8px 8px 50px;
   }
   .menu__text {
     width: 75%;
@@ -1093,7 +1093,7 @@ a {
     width: 82%;
   }
   .menu__prices {
-    padding: 5px 8px 8px 25px;
+    padding: 5px 8px 8px 20px;
   }
   .menu__card:hover .menu__text {
     width: 55%;
