@@ -125,6 +125,7 @@
                 display: inline-block;
                 flex: none;
                 transition: width 1s;
+                width: 75%;
             }
 
             .menu__item{
@@ -150,26 +151,29 @@
             }
 
             .menu__holder{
-                width: 24.5%;
+                width: 40%;
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
                 background-color: $teritary-color;
             }
             
+            
+           
             .menu__card:hover{
                 .menu__text{
                     transition: width 1.5s;
                 }
             }
+            /* ANIMATIONS APPEAR AFTER ITEM BEING CLICKED */
 
-            .menu__card:hover{
+            .menu__holder:hover{
                 .menu__icon{
-                    animation: counter-clock 1000ms ease-in-out forwards;
+                    animation: clockwise 1000ms ease-in-out forwards;
                 }
             }
 
-            .menu__holder:hover{
+            .menu__card:hover{
                 .menu__icon{
                     animation: clockwise 1000ms ease-in-out forwards;
                 }

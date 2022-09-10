@@ -347,7 +347,7 @@ a {
   }
   .restaurants__container {
     width: 332px;
-    margin-left: 4rem;
+    margin-left: 2rem;
   }
   .restaurants__title {
     font-size: 20px;
@@ -820,6 +820,7 @@ a {
             flex: none;
     -webkit-transition: width 1s;
     transition: width 1s;
+    width: 75%;
   }
   .menu__item {
     display: -webkit-box;
@@ -844,7 +845,7 @@ a {
     text-overflow: ellipsis;
   }
   .menu__holder {
-    width: 24.5%;
+    width: 40%;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -860,11 +861,12 @@ a {
     -webkit-transition: width 1.5s;
     transition: width 1.5s;
   }
-  .menu__card:hover .menu__icon {
-    -webkit-animation: counter-clock 1000ms ease-in-out forwards;
-            animation: counter-clock 1000ms ease-in-out forwards;
-  }
+  /* ANIMATIONS APPEAR AFTER ITEM BEING CLICKED */
   .menu__holder:hover .menu__icon {
+    -webkit-animation: clockwise 1000ms ease-in-out forwards;
+            animation: clockwise 1000ms ease-in-out forwards;
+  }
+  .menu__card:hover .menu__icon {
     -webkit-animation: clockwise 1000ms ease-in-out forwards;
             animation: clockwise 1000ms ease-in-out forwards;
   }
@@ -978,7 +980,7 @@ a {
     padding: 0 8px 8px 50px;
   }
   .menu__text {
-    width: 75%;
+    width: 60%;
   }
   .menu__card:hover .menu__text {
     width: 100%;
