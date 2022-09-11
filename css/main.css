@@ -329,7 +329,7 @@ a {
     color: #9356DC;
   }
   .info__icon {
-    padding: 10 0px;
+    padding: 10px 0px;
     width: 30px;
   }
   /* RESTAURANT CARDS!!!!!!!!!! */
@@ -561,7 +561,7 @@ a {
     margin: 0 15px 20px 18px;
   }
   /*-- RESTAURANT CARD--*/
-  .restaurants {
+  .restaurants{
     /*-- HEART--*/
   }
   .restaurants__wrap {
@@ -640,7 +640,7 @@ a {
     font-size: 18px;
   }
   /* RESTAURANT CARDS!!!!! */
-  .restaurants {
+  .restaurants{
     /* HEART!!!!!!! */
   }
   .restaurants__container {
@@ -980,10 +980,10 @@ a {
     padding: 0 8px 8px 50px;
   }
   .menu__text {
-    width: 60%;
+    width: 75%;
   }
   .menu__card:hover .menu__text {
-    width: 100%;
+    width: 60%;
   }
   .menu__description {
     font-size: 14px;
@@ -1035,7 +1035,7 @@ a {
     font-size: 14px;
   }
   .menu__card:hover .menu__text {
-    width: 70%;
+    width: 60%;
   }
   .menu__containers {
     width: 100%;
