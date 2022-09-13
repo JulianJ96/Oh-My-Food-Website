@@ -1,6 +1,6 @@
 # Oh-My-Food-Website
 
-You can view the website here: https://github.com/JulianJ96/Oh-My-Food-Website
+You can view the website here: https://julianj96.github.io/Oh-My-Food-Website/
 
 
 Homepage: Display the location of restaurants. Eventually, it will be possible to choose restaurants close to a certain place. A section containing the four menus in the form of cards. When clicking on the card,the user is redirected to the menu page. When you arrive on the home page a loading spinner will appear.
