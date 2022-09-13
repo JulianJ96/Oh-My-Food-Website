@@ -94,7 +94,7 @@
     .info{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: auto;
     
         &__wrap{
             display: flex;
@@ -126,7 +126,7 @@
 
         &__card {
             margin-left: .25rem;
-            width: 245%;
+            width: 210%;
             height: 22%;
         }
         &__card-img-1,
@@ -146,7 +146,7 @@
 
     /* FOOTER SECTION!!!!!!! */ 
     .footer-section{
-        width: 100%;
+        width:auto;
     }
 }
 
@@ -162,6 +162,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        width: auto;
     }
 
     .Psubtitle{
@@ -177,6 +178,7 @@
         &__wrap{
             flex-direction: row;
             margin-left: 15px;
+            width: 100%;
         }
 
         &__title{
